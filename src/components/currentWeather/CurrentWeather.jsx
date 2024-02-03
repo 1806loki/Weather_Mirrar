@@ -2,6 +2,9 @@
 import "./CurrentWeather.css";
 
 const CurrentWeather = ({ data, unit }) => {
+  if (!data) {
+    return <p>No Data Available</p>;
+  }
   if (data?.message) {
     return (
       <>
@@ -50,7 +53,7 @@ const CurrentWeather = ({ data, unit }) => {
                 </td>
               </tr>
               <tr>
-                <td>{data?.weather?.[0]?.description}</td>
+                <td colSpan="2">{data?.weather?.[0]?.description}</td>
               </tr>
             </tbody>
           </table>

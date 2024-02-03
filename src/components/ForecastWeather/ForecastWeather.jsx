@@ -15,10 +15,10 @@ const ForecastWeather = ({ data, unit }) => {
         <table>
           <thead>
             <tr>
-              <th>5-day Weather Forecast</th>
+              <th>Day</th>
               <th>Temperature </th>
-              <th>Weather Description</th>
-              <th>Weather Icon</th>
+              <th> Description</th>
+              <th> Icon</th>
             </tr>
           </thead>
           <tbody>
@@ -35,7 +35,7 @@ const ForecastWeather = ({ data, unit }) => {
                   {Math.ceil(ele.main.temp)}{" "}
                   <span>{unit === "metric" ? "° C" : "° F"}</span>
                 </td>
-                <td>{ele.weather?.[0].description}</td>
+                <td >{ele.weather?.[0].description}</td>
                 <td>
                   <img
                     src={`http://openweathermap.org/img/w/${ele?.weather?.[0]?.icon}.png`}

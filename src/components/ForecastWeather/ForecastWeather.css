@@ -26,8 +26,8 @@
 .forecastWeather .container table th,
 td {
   padding: 10px;
-  text-align: left;
-  text-transform: capitalize;
+  text-align: center;
+   text-transform: capitalize;
 }
 
 .forecastWeather .container th {
@@ -79,7 +79,6 @@ img {
 @media (max-width: 330px) {
   .forecastWeather .container table td {
     font-size: 12px;
-
   }
 
   .forecastWeather .container table td img {
