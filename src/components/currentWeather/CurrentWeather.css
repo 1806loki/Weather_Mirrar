@@ -1,0 +1,123 @@
+.currentWeather {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  backdrop-filter: blur(300px);
+  display: flex;
+  color: #e7e7e7;
+}
+
+.currentWeather .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.currentWeather .container .left {
+  text-align: center;
+}
+
+.currentWeather .container .left .temp h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 5em;
+}
+
+.currentWeather .container .left .temp span {
+  font-size: 4rem;
+}
+
+.currentWeather .container .left .place {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.currentWeather .container .left.time {
+  font-size: 2em;
+}
+.currentWeather .container .right {
+  text-align: center;
+}
+
+.currentWeather .container .right table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.currentWeather .container .right table tbody #speed {
+  text-transform: lowercase;
+}
+
+.currentWeather .container .right table td {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.errorMessage {
+  color: #ff0000;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .currentWeather {
+    margin: 10px;
+    padding: 10px;
+  }
+  .currentWeather .container .left .temp h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5em;
+  }
+  .currentWeather .container .left .temp span {
+    font-size: 0.5em;
+  }
+  .currentWeather .container .left .place {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  .currentWeather .container .left.time {
+    font-size: 1em;
+  }
+  .currentWeather .container .right table td {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .currentWeather .container .right table td {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 330px) {
+  .currentWeather {
+    margin: 0;
+    padding: 0;
+  }
+  .currentWeather .container .left .temp h1 {
+    font-size: 3em;
+  }
+  .currentWeather .container .left img {
+    height: 20px;
+  }
+
+  .currentWeather .container .left .place {
+    font-size: 15px;
+  }
+  .currentWeather .container .left .time {
+    font-size: 15px;
+  }
+
+  .currentWeather .container .right table td {
+    font-size: 13px;
+  }
+}

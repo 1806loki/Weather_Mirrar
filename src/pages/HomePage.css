@@ -1,0 +1,35 @@
+.HomePage {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(37, 53, 58);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.HomePage .main {
+  display: flex;
+}
+
+.HomePage .main button {
+  display: block;
+}
+
+@media (max-width: 840px) {
+  .HomePage .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .HomePage {
+    padding: 0;
+  }
+}
