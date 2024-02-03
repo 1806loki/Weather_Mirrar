@@ -57,23 +57,19 @@ Welcome to Weather Mirrar, an elegant and user-friendly weather forecast applica
 
 To experience Weather Mirrar locally, follow these simple steps:
 
-1. **Clone Repository:**
+1. **Clone the repository**
 
    git clone https://github.com/1806loki/Weather_Mirrar.git
 
-2. **Clone the repository**
-
-   git clone https://github.com/1806loki/Weather_Mirrar.git
-
-3. **Change into the project directory**
+2. **Change into the project directory**
 
    cd Weather_Mirrar
 
-4. **Install dependencies**
+3. **Install dependencies**
 
    npm install
 
-5. **Start the application**
+4. **Start the application**
 
    npm run dev
 
